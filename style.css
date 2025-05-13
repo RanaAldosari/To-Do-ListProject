@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.containerDIv {
+    width: 100%;
+    max-width: 540px;
+    background: #f4d5ee96;
+    margin: 5rem auto 2rem;
+    padding: 2.5rem 2rem 4rem;
+    border-radius: 10px;
+}
+
+.containerDIv h2 {
+    color: #713f85;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.containerDIv h2 i {
+    margin-left: 0.6rem;
+    font-size: 1.4rem;
+}
+
+.taskInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(217, 217, 217, 0.479);
+    border-radius: 30px;
+    padding: 0.6rem 0.6rem 0.6rem 1rem;
+    flex-wrap: wrap;
+}
+
+.task-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    min-width: 180px;
+}
+
+.task-btn {
+    border: none;
+    outline: none;
+    padding: 0.8rem 2rem;
+    background: #713f85;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 0.5rem;
+}
+.task-btn:hover{
+    background: #713f85cb;
+}
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    background-color: #f9f9f9;
+    margin: 0.7rem 0;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contentDiv {
+    display: flex;
+    flex-direction: column;
+    color: #713f85;
+    max-width: 75%;
+}
+
+.task-time {
+    font-size: 0.8rem;
+    color: gray;
+    margin-top: 0.2rem;
+}
+
+.iconsDiv {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.iconsDiv i {
+    cursor: pointer;
+    color: #713f85;
+    font-size: 1.2rem;
+}
+
+.iconsDiv i:hover {
+    transform: scale(1.4);
+}
+@media (max-width:600px){
+    .container{
+        padding: .4rem;
+    }
+    .containerDIv {
+    width: 100%;
+    max-width: 540px;
+}
+.task-btn {
+        width: 100%;
+        margin-top: 0.7rem;
+    }
+    .iconsDiv i {
+    cursor: pointer;
+    color: #713f85;
+    font-size: .9rem;
+}
+}
